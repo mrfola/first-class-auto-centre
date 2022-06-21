@@ -1,0 +1,31 @@
+@use './../../../../globals'
+    
+.teamCard
+    display: flex
+    flex-direction: row
+
+    .data 
+        margin-left: 15px
+
+        .jobContainer
+                display: flex
+                flex-direction: row
+                align-items: center
+
+        .accent
+            background-color: globals.$red-color
+            height: 2px 
+            width: 15px
+            display: inline-block
+            margin-right: 16px
+
+        p
+            font-size: 18px
+                    
+        .dataContainer
+            display: flex
+            flex-direction: row
+            flex-wrap: nowrap
+
+            p
+                margin-left: 10px

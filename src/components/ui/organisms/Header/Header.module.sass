@@ -1,0 +1,29 @@
+@use './../../../../globals'
+
+.header
+    display: grid
+    grid-template-columns: 1fr 3fr 1fr
+    padding: 35px
+    margin-bottom: -112px
+
+.header .logo
+    margin-left: auto
+
+.header .links ul
+    margin: 0 auto
+    max-width: 332px
+    display: flex
+    flex-wrap: nowrap
+    flex-direction: row
+    justify-content: space-between
+
+
+.header .links ul li 
+    list-style: none
+    font-size: 14px
+    font-weight: 600
+
+.header .links ul li.active
+    font-weight: 700
+    color: globals.$red-color
+    text-decoration: underline

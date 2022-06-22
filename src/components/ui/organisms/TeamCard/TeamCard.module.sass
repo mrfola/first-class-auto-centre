@@ -3,8 +3,14 @@
 .teamCard
     display: flex
     flex-direction: row
+    width: fit-content
+    flex-wrap: wrap
+    justify-content: center
 
     .data 
+        display: flex
+        flex-direction: column
+        gap: 12px
         margin-left: 15px
 
         .jobContainer
@@ -21,6 +27,8 @@
 
         p
             font-size: 18px
+            line-height: 18px
+            overflow-wrap: break-word
                     
         .dataContainer
             display: flex
@@ -29,3 +37,6 @@
 
             p
                 margin-left: 10px
+                line-height: 18px
+                inline-size: 160px
+                overflow-wrap: break-word

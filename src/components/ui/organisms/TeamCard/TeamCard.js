@@ -11,14 +11,14 @@ const TeamCard = ({img, data}) =>
             <div className={styles.data}>
                 <H3>{data.name}</H3>
                 <div className={styles.jobContainer}><span className={styles.accent}></span><P>{data.job}</P></div>
-                <span className={styles.dataContainer}>
+                <div className={styles.dataContainer}>
                     <img src={phoneIcon}/>
                     <P>{data.phoneNumber}</P>
-                </span>
-                <span className={styles.dataContainer}>
+                </div>
+                <div className={styles.dataContainer}>
                     <img src={emailIcon}/>
                     <P>{data.email}</P>
-                </span>
+                </div>
             </div>
         </div>
      );

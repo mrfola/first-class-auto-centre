@@ -74,7 +74,7 @@ const AboutTemplate = () =>
 
                 <div className={styles.content}>
                     <TeamCard 
-                        data= {{name: "John Doe", job: "C.E.O", phoneNumber: "08048281168", email: "johndoe@gmail.com"}}
+                        data= {{name: "John Doe", job: "C.E.O", phoneNumber: "08048281168", email: "johndoeeeeeeeeeeeeeee@gmail.com"}}
                         img = {{src: ceoImg}}
                     />
                     <TeamCard 

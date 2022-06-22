@@ -3,10 +3,14 @@
 
     .footerContent
         padding: 70px 11.5% 93px 11.5%
-        display: grid
-        grid-template-columns: 65% 35%
+        // display: grid
+        // grid-template-columns: 65% 35%
+        display: flex
+        flex-wrap: flex-wrap
 
         .addressAndLogo
+            width: 65%
+
             .address
                 max-width: 285px
                 font-size: 16px
@@ -15,6 +19,7 @@
                 margin-top: 20px
 
         .linksAndSocials
+            width: 35%
             display: grid
             grid-template-columns: auto auto
             column-gap: 89px
@@ -22,10 +27,16 @@
             .links
                 .content
                     margin-top: 27px
-                    display: grid
-                    grid-template-columns: 1fr 1fr
-                    row-gap: 15px
-                    column-gap: auto
+                    // display: grid
+                    // grid-template-columns: 1fr 1fr
+                    // row-gap: 15px
+                    // column-gap: auto
+                    display: flex
+                    flex-wrap: wrap
+                    gap: 15px
+
+                    // a
+                    //     width: minmax(10%, min-content)
             
             .socials
                 .content

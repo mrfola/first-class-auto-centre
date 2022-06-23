@@ -1,0 +1,95 @@
+@use './../../../globals'
+    
+.home
+    .whyUs
+        padding: 130px 11.5%
+        background: linear-gradient(4.68deg, #1F232C 16.1%, #414147 107.69%)
+        height: max-content
+
+        .content
+            margin-top: 81px    
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            align-items: center
+            justify-content: center
+            height: fit-content
+
+            div
+                height: 327px
+                
+            div:first-child
+                background-color:#1F1F1F
+                height: 83%
+                margin: auto 0
+
+            div:nth-child(2)
+                background-color:#CE0003
+
+            div:nth-child(3)
+                background-color:#FFFFFF
+                height: 83%
+                
+                p
+                    color: #1F1F1F
+
+    .testimonials
+        padding: 130px 11.6%
+
+        .preheading
+            text-transform: uppercase
+            display: inline-block
+            margin-bottom: 5px
+
+        .content
+            margin-top: 70px
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            justify-content: space-around
+            gap: 15px
+
+            >div:first-child, >div:nth-child(3)
+                background: white
+                margin-top: 41px
+
+                p, span
+                    color: #1F1F1F
+
+            >div:nth-child(2)
+                background: globals.$red-color
+
+    .gallery
+        padding: 130px 11.6%
+        background: linear-gradient(0.13deg, #2F3139 12.77%, #1F232C 109.65%)
+    
+    .ourProcess
+        display: flex
+        flex-direction: column
+        margin: 25px 0!important
+
+        .process
+            display: grid
+            grid-template-columns: 10% 90%//fit-content fit-content
+            gap: 20px
+            
+            .number
+                width: 33px
+                height: 33px
+                border: 3px solid white
+                border-radius: 50%
+                display: flex
+                align-items: center
+                justify-content: center
+
+            > .content
+                .heading
+                    font-weight: 700
+                    margin-bottom: 10px
+                    display: inline-block
+
+                .body 
+                    display: inline-block
+
+        .process:nth-child(2)
+            margin: 20px 0

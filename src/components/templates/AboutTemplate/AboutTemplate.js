@@ -37,7 +37,7 @@ const AboutTemplate = () =>
                 </P>
             </div>
 
-            <ImageText img={missionImage} gradientBG>
+            <ImageText img={missionImage} contentBG="linear-gradient(347.73deg, #414147 -422.44%, #1F232C 179.69%)">
                 <AccentedHeading
                     accentStyles={{ width: '83px'}}
                     headingStyles={{alignItems: 'flex-start'}}
@@ -102,7 +102,7 @@ const AboutTemplate = () =>
                 
             </div>
 
-            <ImageText img={talkToUsImage} id={styles.talkToUsImage} gradientBG>
+            <ImageText img={talkToUsImage} id={styles.talkToUsImage} contentBG="linear-gradient(347.73deg, #414147 -422.44%, #1F232C 179.69%)">
                 
                 <AccentedHeading
                     accentStyles={{ width: '48%'}}

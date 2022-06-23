@@ -1,0 +1,36 @@
+#gallery-swiper
+  .swiper 
+      width: 100%
+      height: 100%
+    
+    
+  .swiper-slide 
+    img 
+      // display: block
+      width: 100%
+      height: 100%
+      object-fit: cover
+      
+    
+  .swiper-slide 
+    width: fit-content
+    max-width: 80%  
+
+    :hover
+      cursor: grab
+
+    :active
+      cursor: grabbing
+    
+  .swiper-slide-prev, .swiper-slide-next
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    height: 400.18px!important
+    margin: auto 0
+
+    img
+      filter: blur(3px)
+
+    

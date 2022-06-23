@@ -3,6 +3,10 @@ import Home from './components/pages/Home/Home';
 import About from './components/pages/About/About';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
 function App() 
 {
   return (

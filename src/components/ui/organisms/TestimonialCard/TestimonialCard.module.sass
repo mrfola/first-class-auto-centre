@@ -1,0 +1,50 @@
+.testimonialCard
+    position: relative
+    padding: 25px
+    max-width: 350px
+    border-radius: 5px
+    display: flex
+    flex-direction: column
+    align-items: center
+    height: fit-content
+
+    img
+        position: absolute
+        top: -35px
+        height: 70px
+        width: 70px
+        border-radius: 50%
+
+    .content:before
+        content: '"'
+        display: inline-block
+        font-size: 60px
+        line-height: 0px
+        transform: rotate(180deg)
+        font-family: 'BIZ UDGothic', sans-serif,
+        color: rgba(213, 214, 255, 0.4)
+        
+    .content
+        p
+            font-size: 13px
+            line-height: 15.6px
+            font-weight: 400
+            margin: 20px 0 15px 0
+
+        .author
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+
+            .name
+                font-size: 13px
+                font-weight: 600
+                text-align: right
+            
+            .position
+                font-size: 13px
+                font-weight: 400
+                text-align: right
+                margin-top: 5px
+
+    

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import styles from './ImageText.module.sass';
 
-const ImageText = ({img, children, rowReverse = false, gradientBG = false, ...rest}) => 
+const ImageText = ({img, children, rowReverse = false, contentBG = false, ...rest}) => 
 {
     const [customStyles, setCustomStyles] = useState({});
     const [contentCustomStyles, setContentCustomStyles] = useState({});
@@ -17,15 +17,15 @@ const ImageText = ({img, children, rowReverse = false, gradientBG = false, ...re
             });
         }
 
-        if(gradientBG)
+        if(contentBG)
         {
             setContentCustomStyles((previousStyles) => 
             {
-                return {...previousStyles, background: "linear-gradient(347.73deg, #414147 -422.44%, #1F232C 179.69%)"}
+                return {...previousStyles, background: contentBG}
             });
         }
 
-    }, [rowReverse, gradientBG]);
+    }, [rowReverse, contentBG]);
 
     return ( 
         <div className={styles.imageText} {...rest} style={customStyles} >

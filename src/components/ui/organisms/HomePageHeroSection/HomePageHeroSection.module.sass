@@ -1,6 +1,7 @@
 .heroSection
     height: 150vh
     padding: 15%
+    padding-top: max(15%, 170px)
     background-image: url('./../../../../assets/images/home-hero-image.png')
     background-size: cover
     background-position: center -10%
@@ -60,8 +61,15 @@
 
 @media screen and (max-width: 600px) 
     .heroSection
+        height: 93vh
+        padding: 15%
         .heroSectionContainer
+            .content
+                padding-top: 60px
+
             .companyFeatures
+                bottom: 0
+
                 .divider
                     width: 1px
                     height: 25.9px

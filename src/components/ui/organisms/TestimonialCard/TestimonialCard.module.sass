@@ -1,7 +1,7 @@
 .testimonialCard
     position: relative
     padding: 25px
-    max-width: 350px
+    // max-width: 350px
     border-radius: 5px
     display: flex
     flex-direction: column
@@ -26,10 +26,13 @@
         
     .content
         p
-            font-size: 13px
-            line-height: 15.6px
+            font-size: clamp(0.5rem, 2vw, 1rem)
+            line-height: 150%
             font-weight: 400
             margin: 20px 0 15px 0
+            max-width: 298px
+            overflow-wrap: break-word
+            text-align: left
 
         .author
             display: flex
@@ -48,3 +51,15 @@
                 margin-top: 5px
 
     
+@media screen and (max-width: 900px) 
+    .testimonialCard
+        padding: 16px 20px
+
+        img
+            top: -21.58px
+            height: 43.16px
+            width: 43.16px
+
+        .content
+            p
+                margin: 12.5px 0 9.25px 0

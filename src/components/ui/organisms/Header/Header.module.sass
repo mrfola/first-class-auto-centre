@@ -2,30 +2,152 @@
 
 .header
     display: grid
-    grid-template-columns: 1fr 3fr 1fr
+    grid-template-columns: 1fr 4fr
     padding: 35px
     margin-bottom: -112px
     align-items: center
 
-.header .logo
-    margin-left: auto
+    .logo
+        margin-left: auto
 
-.header .links ul
-    margin: 0 auto
-    max-width: 332px
-    display: flex
-    flex-wrap: nowrap
-    flex-direction: row
-    justify-content: space-between
+    .desktopNav
+        display: flex
+        flex-wrap: nowrap
+        align-items: center
+
+        .links
+            width: 75%
+
+    .links ul
+        margin: 0 auto
+        max-width: 332px
+        display: flex
+        flex-wrap: nowrap
+        flex-direction: row
+        justify-content: space-between
+
+        li 
+            list-style: none
+            font-size: 14px
+            font-weight: 600
+            cursor: pointer
+
+        li.active a
+            font-weight: 700
+            color: globals.$red-color
+            text-decoration: underline
+
+    .mobileNav
+        display: none
 
 
-.header .links ul li 
-    list-style: none
-    font-size: 14px
-    font-weight: 600
-    cursor: pointer
+@media screen and (max-width: 900px) 
 
-.header .links ul li.active a
-    font-weight: 700
-    color: globals.$red-color
-    text-decoration: underline
+    .desktopNav
+        display: none!important
+    
+    .mobileNav
+        display: flex!important
+        justify-content: flex-end
+        cursor: pointer
+
+        .hamburger
+            width: 15px
+            height: 1.5px
+            background: #ffffff
+            border-radius: 25px
+            transition: all .5s ease-in-out
+   
+
+        .hamburger::before, .hamburger::after
+            position: absolute
+            content: ""
+            width: 15px
+            height: 1.5px
+            background: #ffffff
+            border-radius: 25px
+            transition: all .5s ease-in-out
+        
+
+        .hamburger::before
+            transform: translateY(-5px)
+   
+        .hamburger::after
+            transform: translateY(5px)
+   
+    /* Mobile menu navigation animation*/
+    .mobileNav.open 
+        .hamburger
+            transform: translateX(-50px)
+            background: transparent
+   
+        .hamburger::before
+            transform: rotate(45deg) translate(35px, -35px)
+
+        .hamburger::after
+            transform: rotate(-45deg) translate(35px, 35px)
+
+    /* Mobile menu modal */
+    .mobileMenuModal::backdrop
+        background-color: rgba(255,255,255,0.3)
+
+    .mobileMenuModal 
+        background-color: #1F232C
+        width: 80vw
+        max-width: 500px
+        border-radius: 5px
+        padding: 20px 0
+        animation: slide-up .5s forwards, fade-in 500ms forwards
+
+
+        .closeIcon
+            position: absolute
+            top: 10px
+            right: 10px
+            float:right
+            cursor: pointer
+            border-radius: 4px
+            background: rgba(125, 125, 125, 0.15)
+            width: 30px
+            height: 30px
+            padding: 10px
+
+        .closeIcon::before, .closeIcon::after
+            position: absolute
+            content: ""
+            width: 18px
+            height: 1.5px
+            background: #7D7D7D
+            border-radius: 25px
+            transition: all .5s ease-in-out
+
+        .closeIcon::before
+            transform: rotate(45deg) translate(-1px, 6px)
+
+        .closeIcon::after
+            transform: rotate(-45deg) translate(-6px, -1px)
+
+
+        .mobileLinks 
+            display: flex
+            flex-direction: column
+            flex-wrap: nowrap
+            align-items: center
+            justify-content: center
+            padding: 10px 0 10px 0
+
+            li
+                padding: 10px 0
+
+            button
+                margin-top: 10px
+
+    
+    @keyframes slide-up 
+        0% 
+            transform: translateY(100%)
+        
+        100% 
+            transform: translateY(0%)
+        
+    

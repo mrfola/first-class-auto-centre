@@ -49,6 +49,9 @@
             justify-content: space-around
             gap: 15px
 
+            >div
+                width: 30%
+
             >div:first-child, >div:nth-child(3)
                 background: white
                 margin-top: 41px
@@ -87,9 +90,39 @@
                     font-weight: 700
                     margin-bottom: 10px
                     display: inline-block
+                    font-size: clamp(0.875rem, 2.75vw, 1rem) 
 
                 .body 
                     display: inline-block
+                    font-size: clamp(0.75rem, 2.5vw, 1rem) 
+
 
         .process:nth-child(2)
             margin: 20px 0
+
+@media screen and (max-width: 600px) 
+    .home
+        .testimonials
+            padding: 40px 11.6%
+            
+            .content
+                >div
+                    width: fit-content
+
+                >div:nth-child(2), >div:nth-child(3)
+                    margin-top: 41px
+        .whyUs
+            padding: 40px 11.5%
+
+            .content
+                margin-top: 18px
+
+                div
+                    height: auto
+                    
+                div:first-child, div:nth-child(3)
+                    height: 100%
+                
+
+        .gallery
+            padding: 40px 7.5%

@@ -15,7 +15,6 @@ import styles from './AboutTemplate.module.sass';
 import H2 from "../../ui/atoms/headings/H2/H2";
 import P from "../../ui/atoms/P/P";
 
-
 const AboutTemplate = () => 
 {
     return ( 
@@ -78,26 +77,32 @@ const AboutTemplate = () =>
 
                 <div className={styles.content}>
                     <TeamCard 
+                        id={styles.teamCard1}
                         data= {{name: "John Doe", job: "C.E.O", phoneNumber: "08048281168", email: "johndoeeeeeeeeeeeeeee@gmail.com"}}
                         img = {{src: ceoImg}}
                     />
                     <TeamCard 
+                        id={styles.teamCard2}
                         data= {{name: "John Doe", job: "C.E.O", phoneNumber: "08048281168", email: "johndoe@gmail.com"}}
                         img = {{src: ceoImg}}
                     />
                     <TeamCard 
+                        id={styles.teamCard3}
                         data= {{name: "John Doe", job: "C.E.O", phoneNumber: "08048281168", email: "johndoe@gmail.com"}}
                         img = {{src: ceoImg}}
                     />
                     <TeamCard 
+                        id={styles.teamCard4}
                         data= {{name: "John Doe", job: "C.E.O", phoneNumber: "08048281168", email: "johndoe@gmail.com"}}
                         img = {{src: ceoImg}}
                     />
                     <TeamCard 
+                        id={styles.teamCard5}
                         data= {{name: "John Doe", job: "C.E.O", phoneNumber: "08048281168", email: "johndoe@gmail.com"}}
                         img = {{src: ceoImg}}
                     />
                     <TeamCard 
+                        id={styles.teamCard6}
                         data= {{name: "John Doe", job: "C.E.O", phoneNumber: "08048281168", email: "johndoe@gmail.com"}}
                         img = {{src: ceoImg}}
                     />

@@ -9,7 +9,7 @@
         flex-wrap: flex-wrap
 
         .addressAndLogo
-            width: 65%
+            width: 60%
 
             .address
                 max-width: 285px
@@ -19,21 +19,25 @@
                 margin-top: 20px
 
         .linksAndSocials
-            width: 35%
-            display: grid
-            grid-template-columns: auto auto
-            column-gap: 89px
+            width: 40%
+            display: flex
+            flex-wrap: wrap
+            gap: 30px
+            justify-content: space-between
+            // display: grid
+            // grid-template-columns: auto auto
+            // column-gap: 89px
 
             .links
                 .content
                     margin-top: 27px
-                    // display: grid
-                    // grid-template-columns: 1fr 1fr
-                    // row-gap: 15px
-                    // column-gap: auto
-                    display: flex
-                    flex-wrap: wrap
-                    gap: 15px
+                    display: grid
+                    grid-template-columns: 1fr 1fr
+                    row-gap: 15px
+                    column-gap: 10px
+                    // display: flex
+                    // flex-wrap: wrap
+                    // gap: 15px
 
                     // a
                     //     width: minmax(10%, min-content)
@@ -55,3 +59,16 @@
     .copyright
         padding: 58px
         text-align: center
+
+@media screen and (max-width: 600px) 
+    .footer
+        .footerContent
+            flex-direction: column
+            padding: 40px 11.5% 93px 11.5%
+
+            .addressAndLogo
+                width: 100%
+                margin-bottom: 50px
+
+            .linksAndSocials
+                width: 100%

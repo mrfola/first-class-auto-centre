@@ -3,10 +3,10 @@ import styles from './TeamCard.module.sass';
 import H3 from '../../atoms/headings/H3/H3';
 import P from '../../atoms/P/P';
 
-const TeamCard = ({img, data}) => 
+const TeamCard = ({img, data, ...rest}) => 
 {
     return ( 
-        <div className={styles.teamCard}>
+        <div className={styles.teamCard} {...rest}>
             <img src={img.src} alt={img.alt} />
             <div className={styles.data}>
                 <H3>{data.name}</H3>

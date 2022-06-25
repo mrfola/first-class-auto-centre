@@ -4,19 +4,32 @@
     display: flex
     flex-direction: row
     width: fit-content
-    flex-wrap: wrap
+    flex-wrap: nowrap
     justify-content: center
+    gap: 2.9%
+    width: 100%
+    max-width: 497px 
+
+    >img 
+        width: 57.4%
+        aspect-ratio: 1.5/1
 
     .data 
+        width: 39.7%
         display: flex
         flex-direction: column
         gap: 12px
-        margin-left: 15px
+
+        h3
+            font-size: 20px
+
+        p
+            font-size: 18px
 
         .jobContainer
-                display: flex
-                flex-direction: row
-                align-items: center
+            display: flex
+            flex-direction: row
+            align-items: center
 
         .accent
             background-color: globals.$red-color
@@ -25,18 +38,14 @@
             display: inline-block
             margin-right: 16px
 
-        p
-            font-size: 18px
-            line-height: 18px
-            overflow-wrap: break-word
-                    
         .dataContainer
             display: flex
             flex-direction: row
             flex-wrap: nowrap
+            width: 100%
 
             p
                 margin-left: 10px
-                line-height: 18px
-                inline-size: 160px
+                line-height: 20px
+                max-width: 83.5%
                 overflow-wrap: break-word

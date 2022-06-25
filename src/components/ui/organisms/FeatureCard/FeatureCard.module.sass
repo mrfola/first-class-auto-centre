@@ -1,20 +1,28 @@
 .featureCard
-    width: 370px
     display: flex
     flex-direction: column
     align-items: center
     justify-content: center
-    padding: 55px
+    padding: 35px
 
     .heading 
-        font-size: 24px
+        font-size: clamp(0.875rem, 3vw, 1.5rem)
         font-weight: 600
         max-width: 260px
         margin: 13px 0
 
     .description
-        font-size: 16px
-        line-height: 24px
+        font-size: clamp(0.5rem, 2vw, 1rem)
+        line-height: 150%
         max-width: 260px
         overflow-wrap: break-word
         text-align: center
+
+@media screen and (max-width: 900px) 
+    .featureCard
+        max-width: 192px
+        padding: 30px
+
+        img
+            width: 25px
+            height: auto

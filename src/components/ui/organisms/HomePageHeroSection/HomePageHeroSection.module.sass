@@ -30,19 +30,24 @@
             inline-size: 100%
             text-overflow: break-content
 
-        button
-            font-size: 18px
-
     .companyFeatures
         background-color: rgba(0, 0, 0, 0.3)
-        display: grid
-        grid-template-columns: 1fr 1fr 1fr
+        display: flex
+        flex-direction: row
+        align-items: center
+        // grid-template-columns: 1fr 1fr 1fr
         width: fit-content
         margin: 0 auto
         position: absolute
         bottom: -15%
         left: auto
         right: auto
+        font-size: clamp(0.565rem, 1.15vw, 1rem)
+
+        .divider
+            width: 2px
+            background: #ffffff
+            height: 56px
 
         .companyFeature
             display: flex
@@ -52,4 +57,15 @@
         .heading
             text-transform: uppercase
 
-j
+
+@media screen and (max-width: 600px) 
+    .heroSection
+        .heroSectionContainer
+            .companyFeatures
+                .divider
+                    width: 1px
+                    height: 25.9px
+
+                .companyFeature
+                    padding: 11.27px
+        

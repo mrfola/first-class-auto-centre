@@ -1,4 +1,3 @@
-import P from '../../ui/atoms/P/P';
 import H2 from '../../ui/atoms/headings/H2/H2';
 import styles from './HomeTemplate.module.sass';
 import Button from '../../ui/atoms/Button/Button';
@@ -12,6 +11,7 @@ import AccentedHeading from '../../ui/molecules/AccentedHeading/AccentedHeading'
 import TestimonialCard from '../../ui/organisms/TestimonialCard/TestimonialCard';
 import HomePageHeroSection from "../../ui/organisms/HomePageHeroSection/HomePageHeroSection";
 import GallerySlider from '../../ui/organisms/GallerySlider/GallerySlider';
+import { affordablePricesIcon, qualityServiceIcon, jackOfAllTradesIcon } from "../../../helpers/routes";
 
 const HomeTemplate = () => 
 {
@@ -24,9 +24,21 @@ const HomeTemplate = () =>
             <div className={styles.whyUs}>
                 <AccentedHeading><H2>Why Us?</H2></AccentedHeading>
                 <div className={styles.content}>
-                    <FeatureCard/>
-                    <FeatureCard/>
-                    <FeatureCard/>
+                    <FeatureCard
+                        title="Jack of all trades"
+                        description="From selling to repair, refurbishing, painting and even servicing, we have you coverwd"
+                        img={jackOfAllTradesIcon}
+                    />
+                    <FeatureCard
+                        title="Affordable Prices"
+                        description="Faucibus fusce sollicitudin parturient quisque amet sed nunc consequat diam. Duis nunc ut vel sit metus sit."
+                        img={affordablePricesIcon}
+                    />
+                    <FeatureCard
+                        title="Quality Service"
+                        description="Faucibus fusce sollicitudin parturient quisque amet sed nunc consequat diam. Duis nunc ut vel sit metus sit."
+                        img={qualityServiceIcon}
+                    />
                 </div>
             </div>
 

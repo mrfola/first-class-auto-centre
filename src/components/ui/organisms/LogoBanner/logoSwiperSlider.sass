@@ -4,7 +4,7 @@
     height: 100%
 
   .swiper-wrapper
-    gap: 130px
+    gap: 0px
     align-items: center
 
   .swiper-slide 
@@ -22,15 +22,13 @@
     -webkit-align-items: center
     align-items: center
     width: fit-content
+    padding: 0 65px
 
+  .swiper-slide:hover
+    cursor: grab
 
-
-  .swiper-slide
-    :hover
-      cursor: grab
-
-    :active
-      cursor: grabbing
+  .swiper-slide:active
+    cursor: grabbing
 
     img 
       display: block
@@ -38,9 +36,13 @@
       height: 100%
       object-fit: cover
 
-      // :hover
-      //   cursor: grab
+@media screen and (max-width: 600px) 
 
-      // :active
-      //   cursor: grabbing
+  #logo-swiper
+    .swiper-wrapper
+      .swiper-slide   
+        padding: 0 20px
 
+        img 
+          width: 70px
+          height: auto

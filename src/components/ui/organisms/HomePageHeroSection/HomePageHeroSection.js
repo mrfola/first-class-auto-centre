@@ -18,10 +18,12 @@ const HomePageHeroSection = () =>
                         <span className={styles.heading}>Trusted</span>
                         <span className={styles.subtitle}>Our Service</span>
                     </div>
+                    <div className={styles.divider}></div>
                     <div className={styles.companyFeature}>
                         <span className={styles.heading}>Easy To Access</span>
                         <span className={styles.subtitle}>Our Location</span>
                     </div>
+                    <div className={styles.divider}></div>
                     <div className={styles.companyFeature}>
                         <span className={styles.heading}>Contact Us</span>
                         <span className={styles.subtitle}>We Care</span>

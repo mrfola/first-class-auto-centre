@@ -6,12 +6,14 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import ContactUs from "./components/pages/ContactUs/ContactUs";
 
 function App() 
 {
   return (
     <Router>
       <Routes>
+        <Route path="/contact" element={<ContactUs/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/" element={<Home/>} />
       </Routes>

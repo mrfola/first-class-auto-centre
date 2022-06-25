@@ -1,8 +1,8 @@
 import styles from './Button.module.sass';
 
-const Button = ({children}) => 
+const Button = ({children, ...rest}) => 
 {
-    return <button className={styles.button}>{children}</button>;
+    return <button className={styles.button} {...rest}>{children}</button>;
 }
  
 export default Button;

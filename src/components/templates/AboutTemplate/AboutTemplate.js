@@ -1,18 +1,19 @@
 import AchievementBanner from "../../ui/organisms/AchievementBanner/AchievementBanner";
 import AccentedHeading from "../../ui/molecules/AccentedHeading/AccentedHeading";
 import talkToUsImage from './../../../assets/images/talk-to-us-image.png';
+import aboutHeroBg from './../../../assets/images/about-hero-image.png';
 import missionImage from './../../../assets/images/mission-image.png';
 import HeroSection from "../../ui/organisms/HeroSection/HeroSection";
 import visionImage from './../../../assets/images/vision-image.png';
 import ImageText from "../../ui/organisms/ImageText/ImageText";
 import TeamCard from "../../ui/organisms/TeamCard/TeamCard";
 import ceoImg from './../../../assets/images/ceo-img.png';
+import Footer from "../../ui/organisms/Footer/Footer";
 import Header from "../../ui/organisms/Header/Header";
+import Button from "../../ui/atoms/Button/Button";
 import styles from './AboutTemplate.module.sass';
 import H2 from "../../ui/atoms/headings/H2/H2";
 import P from "../../ui/atoms/P/P";
-import Button from "../../ui/atoms/Button/Button";
-import Footer from "../../ui/organisms/Footer/Footer";
 
 
 const AboutTemplate = () => 
@@ -21,7 +22,10 @@ const AboutTemplate = () =>
         <div>
             <Header/>
 
-            <HeroSection/>
+            <HeroSection
+                title="Get To Know Us"
+                bgImg = {aboutHeroBg}
+            />
 
             <div className={styles.history}>
                 <AccentedHeading><H2>Our History</H2></AccentedHeading>

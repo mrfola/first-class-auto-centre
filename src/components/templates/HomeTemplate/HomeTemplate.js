@@ -6,12 +6,13 @@ import Footer from "../../ui/organisms/Footer/Footer";
 import ImageText from "../../ui/organisms/ImageText/ImageText";
 import LogoBanner from '../../ui/organisms/LogoBanner/LogoBanner';
 import FeatureCard from "../../ui/organisms/FeatureCard/FeatureCard";
+import GallerySlider from '../../ui/organisms/GallerySlider/GallerySlider';
 import ourProcessImage from './../../../assets/images/our-process-image.png';
 import AccentedHeading from '../../ui/molecules/AccentedHeading/AccentedHeading';
 import TestimonialCard from '../../ui/organisms/TestimonialCard/TestimonialCard';
 import HomePageHeroSection from "../../ui/organisms/HomePageHeroSection/HomePageHeroSection";
-import GallerySlider from '../../ui/organisms/GallerySlider/GallerySlider';
-import { affordablePricesIcon, qualityServiceIcon, jackOfAllTradesIcon } from "../../../helpers/routes";
+import { affordablePricesIcon, qualityServiceIcon, jackOfAllTradesIcon, carIcon } from "../../../helpers/routes";
+import { Link } from 'react-router-dom';
 
 const HomeTemplate = () => 
 {
@@ -39,6 +40,33 @@ const HomeTemplate = () =>
                         description="Faucibus fusce sollicitudin parturient quisque amet sed nunc consequat diam. Duis nunc ut vel sit metus sit."
                         img={qualityServiceIcon}
                     />
+                </div>
+            </div>
+
+            <div className={styles.whatWeOffer}>
+                <div className={styles.heading}>
+                    <div className={styles.preTitle}>Overline</div>
+                    <div className={styles.title}>What We Offer</div>
+                </div>
+                <div className={styles.content}>
+                    <FeatureCard
+                        title="Quality Service"
+                        description="Faucibus fusce sollicitudin parturient quisque amet sed nunc consequat diam. Duis nunc ut vel sit metus sit. ucibus fusce sollicitudin parturientqui s"
+                        img={carIcon}
+                    />
+                     <FeatureCard
+                        title="Quality Service"
+                        description="Faucibus fusce sollicitudin parturient quisque amet sed nunc consequat diam. Duis nunc ut vel sit metus sit. ucibus fusce sollicitudin parturientqui s"
+                        img={carIcon}
+                    />
+                     <FeatureCard
+                        title="Quality Service"
+                        description="Faucibus fusce sollicitudin parturient quisque amet sed nunc consequat diam. Duis nunc ut vel sit metus sit. ucibus fusce sollicitudin parturientqui s"
+                        img={carIcon}
+                    />
+                </div>
+                <div className={styles.buttonContainer}>
+                    <Link to="/services"><Button>See All Services</Button></Link>
                 </div>
             </div>
 

@@ -15,6 +15,7 @@ import styles from './AboutTemplate.module.sass';
 import H2 from "../../ui/atoms/headings/H2/H2";
 import P from "../../ui/atoms/P/P";
 
+
 const AboutTemplate = () => 
 {
     return ( 

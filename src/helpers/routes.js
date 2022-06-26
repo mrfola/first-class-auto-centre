@@ -2,6 +2,8 @@ import affordablePrices from './../assets/icons/affordable-prices-icon.svg';
 import jackOfAllTrades from './../assets/icons/jack-of-all-trades-icon.svg';
 import qualityService from './../assets/icons/quality-service-icon.svg';
 
+import car from './../assets/icons/car-icon.svg';
+
 import instagram from './../assets/icons/instagram-icon.svg';
 import facebook from './../assets/icons/facebook-icon.svg';
 import twitter from './../assets/icons/twitter-icon.svg';
@@ -40,6 +42,9 @@ export const instagramIcon = instagram;
 export const affordablePricesIcon = affordablePrices;
 export const jackOfAllTradesIcon = jackOfAllTrades;
 export const qualityServiceIcon = qualityService;
+
+export const carIcon = car;
+
 
 export const logoBannerArray = [
     {src: Coscharis, alt:"Coscharis"},

@@ -10,10 +10,11 @@
             margin-top: 81px    
             display: flex
             flex-direction: row
-            flex-wrap: wrap
+            flex-wrap: nowrap
             align-items: center
             justify-content: center
             height: fit-content
+            gap: 10px
 
             div
                 height: 327px
@@ -32,6 +33,37 @@
                 
                 p
                     color: #1F1F1F
+
+    .whatWeOffer
+        padding: 130px 11.6%
+        .heading
+            border-left: 5px solid rgba(206, 0, 3, 1)
+            padding-left: 10px
+
+            .preTitle
+                font-weight: 700
+                text-transform: uppercase
+                margin-top: 5px
+                font-size: clamp(0.75rem, 1.5vw, 1.125rem)
+
+            .title
+                font-size: clamp(1.5rem, 3vw, 2.5rem)
+                font-weight: 700
+        
+        .content
+            margin-top: 69px
+            display: flex
+            flex-wrap: nowrap
+            justify-content: space-between
+            gap: 10px
+
+            >div
+                background: rgba(255, 255, 255, 0.15)
+
+        .buttonContainer
+            display: flex
+            justify-content: center
+            margin-top: 70px
 
     .testimonials
         padding: 130px 11.6%
@@ -126,3 +158,28 @@
 
         .gallery
             padding: 40px 7.5%
+
+        .whatWeOffer
+            background-color: #1F232C
+            padding: 40px 11.5%
+
+
+@media screen and (max-width: 900px) 
+    .home
+        .whyUs
+            .content
+                width: 100%
+                flex-direction: column
+                align-items: center
+                >div
+                    max-width: 300px
+                    height: 100%
+
+        .whatWeOffer
+            .content
+                flex-direction: column
+                align-items: center
+                >div
+                    max-width: 300px
+            .buttonContainer
+                margin-top: 40px

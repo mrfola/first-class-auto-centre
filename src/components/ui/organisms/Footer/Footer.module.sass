@@ -13,7 +13,7 @@
 
             .address
                 max-width: 285px
-                font-size: 16px
+                font-size: clamp(0.8rem, 3vw, 1rem)
                 font-weight: 500
                 line-height: 19.2px
                 margin-top: 20px
@@ -24,9 +24,6 @@
             flex-wrap: wrap
             gap: 30px
             justify-content: space-between
-            // display: grid
-            // grid-template-columns: auto auto
-            // column-gap: 89px
 
             .links
                 .content
@@ -35,12 +32,8 @@
                     grid-template-columns: 1fr 1fr
                     row-gap: 15px
                     column-gap: 10px
-                    // display: flex
-                    // flex-wrap: wrap
-                    // gap: 15px
+                    font-size: clamp(0.8rem, 3vw, 1rem)
 
-                    // a
-                    //     width: minmax(10%, min-content)
             
             .socials
                 .content
@@ -72,3 +65,8 @@
 
             .linksAndSocials
                 width: 100%
+
+                .socials
+                    img
+                        width: 16px
+                        height: 16px

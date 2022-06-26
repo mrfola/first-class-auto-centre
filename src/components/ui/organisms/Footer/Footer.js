@@ -19,9 +19,9 @@ const Footer = () =>
                         <AccentedHeading style={{margin: 0}}><H3>Useful Links</H3></AccentedHeading>
                         <div className={styles.content}>
                             <Link to="/">Home</Link>
-                            <Link to="/">Our Services</Link>
-                            <Link to="/">About Us</Link>
-                            <Link to="/">Contact Us</Link>
+                            <Link to="/service">Our Services</Link>
+                            <Link to="/about">About Us</Link>
+                            <Link to="/contact">Contact Us</Link>
                         </div>
                     </div>
                     <div className={styles.socials}>

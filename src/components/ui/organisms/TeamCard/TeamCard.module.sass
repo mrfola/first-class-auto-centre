@@ -21,10 +21,10 @@
         gap: 12px
 
         h3
-            font-size: 20px
+            font-size: clamp(0.8rem, 3vw, 1.25rem)
 
         p
-            font-size: 18px
+            font-size: clamp(0.5625rem, 2.5vw, 1.125rem)
 
         .jobContainer
             display: flex
@@ -46,6 +46,18 @@
 
             p
                 margin-left: 10px
-                line-height: 20px
+                line-height: 120%
                 max-width: 83.5%
                 overflow-wrap: break-word
+
+    
+@media screen and (max-width: 600px) 
+    .teamCard
+        .data 
+            .dataContainer
+                p
+                    margin-left: 7px
+
+                img
+                    width: 12px 
+                    height: 12px

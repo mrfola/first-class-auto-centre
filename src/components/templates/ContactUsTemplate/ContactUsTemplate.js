@@ -29,7 +29,7 @@ const ContactUsTemplate = () =>
             <div className={styles.contactInfoAndForm}>
                 <div className={styles.contactInfo}>
                     <AccentedHeading accentStyles={{ width: '40%'}} headingStyles={{margin: 0}}><H2>Get In Touch!</H2></AccentedHeading>
-                    <P className={styles.contactDescription}>Well,what are you waiting for? Don’t let that car issue ruin your day. Have a story to share with us, let’s hear it. We gat you!</P>
+                    <P className={styles.contactDescription}>Well, what are you waiting for? Don’t let that car issue ruin your day. Have a story to share with us, let’s hear it. We gat you!</P>
 
                     <div className={styles.contactInfoItems}>
                         <div className={styles.contactItem}>

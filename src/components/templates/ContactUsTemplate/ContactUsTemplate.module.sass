@@ -12,11 +12,13 @@
         margin: 20px 0 60px 0
 
     .contactInfoItems
-        max-width: 380px
+        width: 100%
+        max-width: min(100%, 380px)
         display: grid
         row-gap: 30px
 
         .contactItem
+            max-width: 100%
             display: grid
             grid-template-columns: 6% 94%
             column-gap: 24px
@@ -29,6 +31,35 @@
                     font-weight: 600
                     display: inline-block
                     margin-bottom: 5px
+                    max-width: 94%
+                    overflow-wrap: break-word
 
                 .description
-                    display: inline-block
+                    font-size: clamp(0.75rem, 2.5vw, 1rem)
+                    max-width: 94%
+                    overflow-wrap: break-word
+
+
+
+@media screen and (max-width: 1000px) 
+
+    .contactInfoAndForm
+        flex-direction: column
+
+        > div
+            width: 100%
+
+        .contactInfoItems
+            max-width: 100%
+
+            .contactItem
+                column-gap: 12px
+                
+        .contactInfo
+            max-width: 100%
+
+    
+@media screen and (max-width: 600px) 
+
+    .contactInfoAndForm
+        padding: 60px 11.5%

@@ -90,7 +90,7 @@ const ServiceTemplate = () =>
                         Ut at enim egestas pharetra massa. Interdum a ipsum amet quam at ac. 
                     </P>
                 </ImageText>
-                <ImageText img={paintServicesImage} showImageOnMobile={true} contentBG="linear-gradient(347.73deg, #414147 -422.44%, #1F232C 179.69%);">
+                <ImageText img={paintServicesImage} showImageOnMobile={true} contentBG="linear-gradient(347.73deg, #414147 -422.44%, #1F232C 179.69%)">
                     <AccentedHeading
                         accentStyles={{ width: '83px'}}
                         headingStyles={{alignItems: 'flex-start'}}
@@ -104,7 +104,7 @@ const ServiceTemplate = () =>
                         Ut at enim egestas pharetra massa. Interdum a ipsum amet quam at ac.
                     </P>
                 </ImageText>
-                <ImageText img={salesImage} rowReverse={true} showImageOnMobile={true} contentBG="linear-gradient(347.73deg, #414147 -422.44%, #1F232C 179.69%);">
+                <ImageText img={salesImage} rowReverse={true} showImageOnMobile={true} contentBG="linear-gradient(347.73deg, #414147 -422.44%, #1F232C 179.69%)">
                     <AccentedHeading
                         accentStyles={{ width: '87%'}}
                         headingStyles={{alignItems: 'flex-start'}}

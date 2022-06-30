@@ -11,9 +11,7 @@ import Header from '../../ui/organisms/Header/Header';
 import Footer from '../../ui/organisms/Footer/Footer';
 import styles from './ContactUsTemplate.module.sass';
 import H2 from '../../ui/atoms/headings/H2/H2';
-// import ShowMap from '../ShowMap/ShowMap';
 import P from '../../ui/atoms/P/P';
-
 
 const ContactUsTemplate = () => 
 {
@@ -73,23 +71,22 @@ const ContactUsTemplate = () =>
                 </div>
             </div>
 
-            <div className={styles.howToFindUs}>
-{/*                 
-            <MapText map={<ShowMap lng="3.37167" lat="6.57111" zoom="9"/>} id={styles.talkToUsImage} contentBG="linear-gradient(347.73deg, #414147 -422.44%, #1F232C 179.69%)">
-            
-                <AccentedHeading
-                    accentStyles={{ width: '48%'}}
-                    headingStyles={{alignItems: 'flex-start'}}
-                >
-                    <H2>How To Find Us</H2>
-                </AccentedHeading>
-                <P>
-                    Our team is made us of experts in the field of...... Let us serve you a worthwhile experoience.....
-                    Let us help you solve your car issues.... egestas pharetra massa. Interdum a ipsum amet quam at ac. 
-                    In blandit ullamcorper egestas convallis nisl, arcu quam lacus. Ut at enim egestas pharetra massa. 
-                    Interdum a ipsum amet quam at ac. 
-                </P>
-            </MapText> */}
+            <div className={styles.howToFindUs}>                
+                <MapText id={styles.talkToUsImage} contentBG="linear-gradient(347.73deg, #414147 -422.44%, #1F232C 179.69%)">
+                
+                    <AccentedHeading
+                        accentStyles={{ width: '48%'}}
+                        headingStyles={{alignItems: 'flex-start'}}
+                    >
+                        <H2>How To Find Us</H2>
+                    </AccentedHeading>
+                    <P>
+                        Our team is made us of experts in the field of...... Let us serve you a worthwhile experoience.....
+                        Let us help you solve your car issues.... egestas pharetra massa. Interdum a ipsum amet quam at ac. 
+                        In blandit ullamcorper egestas convallis nisl, arcu quam lacus. Ut at enim egestas pharetra massa. 
+                        Interdum a ipsum amet quam at ac. 
+                    </P>
+                </MapText>
             </div>
             <Footer/>
         </div>

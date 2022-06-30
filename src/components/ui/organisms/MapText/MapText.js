@@ -1,5 +1,7 @@
+import ShowMap from './../../../templates/ShowMap/ShowMap';
 import { useEffect, useState } from 'react';
 import styles from './MapText.module.sass';
+import './mapStyle.sass';
 
 const MapText = ({map, children, rowReverse = false, contentBG = false, ...rest}) => 
 {
@@ -29,7 +31,7 @@ const MapText = ({map, children, rowReverse = false, contentBG = false, ...rest}
 
     return ( 
         <div className={styles.imageText} {...rest} style={customStyles} >
-                {map}
+                <div className={styles.map}><ShowMap/></div>
                 <div className={styles.content} style={contentCustomStyles}>
                     {children}
                 </div>

@@ -6,7 +6,6 @@ import styles from './LogoBanner.module.sass';
 import {v4 as uuidv4} from "uuid";
 import './logoSwiperSlider.sass';
 
-
 const LogoBanner = () => 
 {
     return ( 

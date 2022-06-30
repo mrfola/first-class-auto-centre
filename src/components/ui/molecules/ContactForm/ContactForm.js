@@ -94,20 +94,20 @@ const ContactForm = () =>
                     </div>    
                 </div>
             
-            <div className={styles.inputItem}>
-                <Input id="email" type="email" placeholder="Email" required {...formik.getFieldProps('email')} />
-                {(isFormSubmitted || formik.touched.email) && formik.errors.email ? (<div className={styles.formError}>{formik.errors.email}</div>) : null}
-            </div>
-        
-            <div className={styles.inputItem}>
-                <Input id="phoneNumber" type="text" placeholder="Phone number"  required {...formik.getFieldProps('phoneNumber')} />
-                {(isFormSubmitted || formik.touched.phoneNumber) && formik.errors.phoneNumber ? (<div className={styles.formError}>{formik.errors.phoneNumber}</div>) : null}
-            </div>
+                <div className={styles.inputItem}>
+                    <Input id="email" type="email" placeholder="Email" required {...formik.getFieldProps('email')} />
+                    {(isFormSubmitted || formik.touched.email) && formik.errors.email ? (<div className={styles.formError}>{formik.errors.email}</div>) : null}
+                </div>
+            
+                <div className={styles.inputItem}>
+                    <Input id="phoneNumber" type="text" placeholder="Phone number"  required {...formik.getFieldProps('phoneNumber')} />
+                    {(isFormSubmitted || formik.touched.phoneNumber) && formik.errors.phoneNumber ? (<div className={styles.formError}>{formik.errors.phoneNumber}</div>) : null}
+                </div>
 
-            <div className={styles.inputItem}>
-                <Textarea id="message" type="text" required {...formik.getFieldProps('message')} placeholder="Speak your mind"></Textarea>
-                {(isFormSubmitted ||formik.touched.message) && formik.errors.message ? (<div className={styles.formError}>{formik.errors.message}</div>) : null}
-            </div>
+                <div className={styles.inputItem}>
+                    <Textarea id="message" type="text" required {...formik.getFieldProps('message')} placeholder="Speak your mind"></Textarea>
+                    {(isFormSubmitted ||formik.touched.message) && formik.errors.message ? (<div className={styles.formError}>{formik.errors.message}</div>) : null}
+                </div>
         
                 <Button type="submit">{isLoading ? "Loading..." : "Submit"}</Button>
                 {(!errorMessage && !successMessage) && <P className={styles.privacyNotice}>
